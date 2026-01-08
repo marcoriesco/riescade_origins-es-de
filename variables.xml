@@ -1,0 +1,18 @@
+<theme>
+	<variables>
+		<avatarPath>${themeRoot}/resources/avatars/riescade.png</avatarPath>
+
+		<fontRobotoLight>${themeRoot}/resources/fonts/Roboto-Light.ttf</fontRobotoLight>
+		<fontRobotoRegular>${themeRoot}/resources/fonts/Roboto-Regular.ttf</fontRobotoRegular>
+		<fontRobotoBold>${themeRoot}/resources/fonts/Roboto-SemiBold.ttf</fontRobotoBold>
+		<fontRobotoCondensedLight>${themeRoot}/resources/fonts/RobotoCondensed-Light.ttf</fontRobotoCondensedLight>
+		<fontRobotoCondensedRegular>${themeRoot}/resources/fonts/RobotoCondensed-Regular.ttf</fontRobotoCondensedRegular>
+		<fontRobotoCondensedBold>${themeRoot}/resources/fonts/RobotoCondensed-SemiBold.ttf</fontRobotoCondensedBold>
+
+		<backgroundArtPath>${themeRoot}/resources/arts/${system.theme}.jpg</backgroundArtPath>
+		<backgroundDefaultArtPath>${themeRoot}/resources/arts/_default.jpg</backgroundDefaultArtPath>
+
+		<logoArtPath>${themeRoot}/resources/logos/${system.theme}.png</logoArtPath>
+		<logoDefaultArtPath>${themeRoot}/resources/logos/_default.png</logoDefaultArtPath>
+	</variables>
+</theme>

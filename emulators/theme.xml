@@ -1,21 +1,12 @@
 <theme>
 
 	<variables>
-		<fontRobotoLight>./../resources/fonts/Roboto-Light.ttf</fontRobotoLight>
-		<fontRobotoRegular>./../resources/fonts/Roboto-Regular.ttf</fontRobotoRegular>
-		<fontRobotoBold>./../resources/fonts/Roboto-SemiBold.ttf</fontRobotoBold>
-		<fontRobotoCondensedLight>./../resources/fonts/RobotoCondensed-Light.ttf</fontRobotoCondensedLight>
-		<fontRobotoCondensedRegular>./../resources/fonts/RobotoCondensed-Regular.ttf</fontRobotoCondensedRegular>
-		<fontRobotoCondensedBold>./../resources/fonts/RobotoCondensed-SemiBold.ttf</fontRobotoCondensedBold>
-
-		<backgroundArtPath>./../resources/arts/${system.theme}.jpg</backgroundArtPath>
-		<backgroundDefaultArtPath>./../resources/arts/_default.jpg</backgroundDefaultArtPath>
-
-		<logoArtPath>./../resources/logos/${system.theme}.png</logoArtPath>
-		<logoDefaultArtPath>./../resources/logos/_default.png</logoDefaultArtPath>
-	</variables>
-
-    <view name="system,gamelist">
+        <themeRoot>./../</themeRoot>
+    </variables>
+    
+	<include>./../variables.xml</include>
+    
+	<view name="system,gamelist">
 		<image name="platforms_avatar">
 			<origin>1 0</origin>
 			<pos>0.835 0.026</pos>

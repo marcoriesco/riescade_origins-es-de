@@ -102,12 +102,14 @@ license:       creative commons CC-BY-NC-SA
 			<size>0.9 0.5</size>
 			<staticImage>${logoArtPath}</staticImage>
 			<defaultImage>${logoDefaultArtPath}</defaultImage>
+			<itemSize>0.09 0.08</itemSize>
+			<itemScale>1.8</itemScale>
 			<itemVerticalAlignment>center</itemVerticalAlignment>
 			<selectedItemMargins>0 0</selectedItemMargins>
-			<maxItemCount>5</maxItemCount>
-			<itemSize>0.09 0.08</itemSize>
 			<selectedItemOffset>0 0</selectedItemOffset>
 			<horizontalOffset>0</horizontalOffset>
+			<maxItemCount>5</maxItemCount>
+			<imageFit>contain</imageFit>
 			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
 			<unfocusedItemSaturation>0</unfocusedItemSaturation>
 			<unfocusedItemDimming>0.5</unfocusedItemDimming>
@@ -117,8 +119,6 @@ license:       creative commons CC-BY-NC-SA
 			<textBackgroundColor>00000000</textBackgroundColor>
 			<fontPath>${fontRobotoCondensedRegular}</fontPath>
 			<fontSize>0.036</fontSize>
-			<itemScale>1.8</itemScale>
-			<imageFit>contain</imageFit>
 			<itemTransitions>animate</itemTransitions>
 			<zIndex>60</zIndex>
 		</carousel>
@@ -207,16 +207,17 @@ license:       creative commons CC-BY-NC-SA
 			<imageType>marquee</imageType>
 			<itemSize>0.15 0.270</itemSize>
 			<itemScale>1.5</itemScale>
+			<itemRotation>-11</itemRotation>
+			<itemRotationOrigin>3 0.5</itemRotationOrigin>
+			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+			<unfocusedItemSaturation>0</unfocusedItemSaturation>
+			<unfocusedItemDimming>0.5</unfocusedItemDimming>
+			<fastScrolling>true</fastScrolling>
 			<color>00000000</color>
 			<textColor>ffffff</textColor>
 			<textBackgroundColor>00000000</textBackgroundColor>
 			<fontPath>${fontRobotoCondensedRegular}</fontPath>
 			<fontSize>0.036</fontSize>
-			<itemRotation>-11</itemRotation>
-			<itemRotationOrigin>3 0.5</itemRotationOrigin>
-			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
-			<unfocusedItemDimming>0.5</unfocusedItemDimming>
-			<fastScrolling>true</fastScrolling>
 			<itemTransitions>animate</itemTransitions>
 			<zIndex>21</zIndex>
 		</carousel>

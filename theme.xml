@@ -1,0 +1,402 @@
+<!--
+theme name:    RIESCADE ORIGINS (ES-DE)
+designed by:   RIESCADE (https://github.com/marcoriesco/)
+license:       creative commons CC-BY-NC-SA
+-->
+
+<theme>
+
+	<variables>
+		<fontRobotoLight>./resources/fonts/Roboto-Light.ttf</fontRobotoLight>
+		<fontRobotoRegular>./resources/fonts/Roboto-Regular.ttf</fontRobotoRegular>
+		<fontRobotoBold>./resources/fonts/Roboto-SemiBold.ttf</fontRobotoBold>
+		<fontRobotoCondensedLight>./resources/fonts/RobotoCondensed-Light.ttf</fontRobotoCondensedLight>
+		<fontRobotoCondensedRegular>./resources/fonts/RobotoCondensed-Regular.ttf</fontRobotoCondensedRegular>
+		<fontRobotoCondensedBold>./resources/fonts/RobotoCondensed-SemiBold.ttf</fontRobotoCondensedBold>
+
+		<backgroundArtPath>./resources/arts/${system.theme}.jpg</backgroundArtPath>
+		<backgroundDefaultArtPath>./resources/arts/_default.jpg</backgroundDefaultArtPath>
+
+		<logoArtPath>./resources/logos/${system.theme}.png</logoArtPath>
+		<logoDefaultArtPath>./resources/logos/_default.png</logoDefaultArtPath>
+	</variables>
+
+	<!-- All Views -->
+	<view name="system,gamelist">
+		<image name="platforms_avatar">
+			<origin>1 0</origin>
+			<pos>0.835 0.026</pos>
+			<size>0.035 </size>
+			<path>./resources/_parts/riescade.png</path>
+			<zIndex>2000</zIndex>
+		</image>
+
+		<image name="platforms_config">
+			<origin>1 0</origin>
+			<pos>0.77 0.0434</pos>
+			<size>0.02 </size>
+			<path>./resources/icons/config.png</path>
+			<color>FFFFFF</color>
+			<zIndex>2000</zIndex>
+		</image>
+
+		<image name="platforms_filter">
+			<origin>1 0</origin>
+			<pos>0.726 0.0432</pos>
+			<size>0.02 </size>
+			<path>./resources/icons/filter.png</path>
+			<color>FFFFFF</color>
+			<zIndex>2000</zIndex>
+		</image>
+
+		<!-- Clock -->
+		<clock name="clock">
+			<origin>1 0</origin>
+			<pos>0.96 0.028</pos>
+			<size>0.135 0.058</size>
+			<fontPath>${fontRobotoLight}</fontPath>
+			<fontSize>0.035</fontSize>
+			<!-- <backgroundColor>ffffff50</backgroundColor> -->
+			<color>FFFFFFFF</color>
+			<horizontalAlignment>right</horizontalAlignment>
+			<verticalAlignment>center</verticalAlignment>
+			<format>%H:%M PM</format>
+			<scope>view</scope>
+			<opacity>1</opacity>
+		</clock>
+
+		<helpsystem name="help">
+			<origin>0.5 1</origin>
+			<pos>0.5 0.99</pos>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.020</fontSize>
+			<fontSizeDimmed>0.026</fontSizeDimmed>
+			<letterCase>capitalize</letterCase>
+			<iconColor>ffffff50</iconColor>
+			<textColor>ffffff80</textColor>
+			<originDimmed>0.5 0</originDimmed>
+			<posDimmed>0.5 0.94</posDimmed>
+			<textColorDimmed>cccccc</textColorDimmed>
+			<iconColorDimmed>cccccc</iconColorDimmed>
+			<opacityDimmed>1.0</opacityDimmed>
+			<scope>view</scope>
+		</helpsystem>
+
+		<systemstatus name="system-status">
+			<origin>1 0</origin>
+			<pos>0.985 0.950</pos>
+			<fontPath>${fontRobotoRegular}</fontPath>
+			<color>ffffff50</color>
+			<height>0.03</height>
+			<opacity>1</opacity>
+			<scope>view</scope>
+		</systemstatus>
+
+	</view>
+
+	<!-- System View -->
+	<view name="system">
+		<carousel name="system-carousel">
+			<origin>0 0</origin>
+			<pos>0.05 0.59</pos>
+			<size>0.9 0.5</size>
+			<staticImage>${logoArtPath}</staticImage>
+			<defaultImage>${logoDefaultArtPath}</defaultImage>
+			<itemVerticalAlignment>center</itemVerticalAlignment>
+			<selectedItemMargins>0 0</selectedItemMargins>
+			<maxItemCount>5</maxItemCount>
+			<itemSize>0.09 0.08</itemSize>
+			<selectedItemOffset>0 0</selectedItemOffset>
+			<horizontalOffset>0</horizontalOffset>
+			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+			<unfocusedItemSaturation>0</unfocusedItemSaturation>
+			<unfocusedItemDimming>0.5</unfocusedItemDimming>
+			<fastScrolling>true</fastScrolling>
+			<color>00000000</color>
+			<textColor>ffffff</textColor>
+			<textBackgroundColor>00000000</textBackgroundColor>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.036</fontSize>
+			<itemScale>1.8</itemScale>
+			<imageFit>contain</imageFit>
+			<itemTransitions>animate</itemTransitions>
+			<zIndex>60</zIndex>
+		</carousel>
+
+		<text name="system-name">
+			<origin>0 0</origin>
+			<pos>0.03 0.028</pos>
+			<size>0.5 0.058</size>
+			<systemdata>fullname</systemdata>
+			<fontPath>${fontRobotoRegular}</fontPath>
+			<fontSize>0.032</fontSize>
+			<horizontalAlignment>left</horizontalAlignment>
+			<verticalAlignment>center</verticalAlignment>
+			<systemNameSuffix>true</systemNameSuffix>
+			<!-- <backgroundColor>ffffff50</backgroundColor> -->
+			<color>FFFFFFFF</color>
+			<opacity>1</opacity>
+			<zIndex>2000</zIndex>
+		</text>
+
+		<text name="system-game-count">
+			<origin>0 1</origin>
+			<pos>0 1</pos>
+			<size>1 0.14</size>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.02</fontSize>
+			<horizontalAlignment>center</horizontalAlignment>
+			<systemdata>gamecount</systemdata>
+			<letterCase>capitalize</letterCase>
+			<color>FFFFFFFF</color>
+		</text>
+
+		<image name="system-background">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./resources/arts/${system.theme}.jpg</path>
+			<zIndex>10</zIndex>
+		</image>
+
+		<!-- System Fanart video Animate -->
+		<video name="system-background-animate">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<delay>1.5</delay>
+			<path>./resources/arts/animate/${system.name}.mp4</path>
+			<zIndex>11</zIndex>
+		</video>
+
+		<image name="overlay, overlayLeft, overlayRight">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./resources/_parts/OverlayDown.png</path>
+			<zIndex>15</zIndex>
+		</image>
+		<image name="overlayLeft">
+			<path>./resources/_parts/OverlayLeft.png</path>
+		</image>
+		<image name="overlayRight">
+			<path>./resources/_parts/OverlayRight.png</path>
+		</image>
+
+		<!-- DEV platform name -->
+		<text name="systemName">
+			<origin>0 0</origin>
+			<pos>0.015 0.950</pos>
+			<size>0.5 0.03</size>
+			<systemdata>name</systemdata>
+			<systemNameSuffix>true</systemNameSuffix>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.020</fontSize>
+			<color>FFFFFF90</color>
+			<zIndex>99</zIndex>
+		</text>
+	</view>
+
+	<!-- Gamelist View -->
+	<view name="gamelist">
+		<carousel name="game-list">
+			<type>verticalWheel</type>
+			<pos>0.34 0</pos>
+			<size>1 1</size>
+			<origin>0 0</origin>
+			<imageType>marquee</imageType>
+			<itemSize>0.15 0.270</itemSize>
+			<itemScale>1.5</itemScale>
+			<color>00000000</color>
+			<textColor>ffffff</textColor>
+			<textBackgroundColor>00000000</textBackgroundColor>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.036</fontSize>
+			<itemRotation>-11</itemRotation>
+			<itemRotationOrigin>3 0.5</itemRotationOrigin>
+			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+			<unfocusedItemDimming>0.5</unfocusedItemDimming>
+			<fastScrolling>true</fastScrolling>
+			<itemTransitions>animate</itemTransitions>
+			<zIndex>21</zIndex>
+		</carousel>
+
+		<!-- Overlays -->
+		<image name="overlay, overlayRight, overlayTopRight, overlayLeft">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./resources/_parts/OverlayDiamonds.png</path>
+			<zIndex>17</zIndex>
+		</image>
+		<image name="overlayTopRight">
+			<path>./resources/_parts/OverlayTopRight.png</path>
+			<zIndex>22</zIndex>
+		</image>
+		<image name="overlayRight">
+			<path>./resources/_parts/OverlayRight.png</path>
+			<zIndex>22</zIndex>
+		</image>
+		<image name="overlayLeft">
+			<path>./resources/_parts/OverlayLeft.png</path>
+			<zIndex>22</zIndex>
+		</image>
+
+		<text name="system-name">
+			<origin>0 0</origin>
+			<pos>0.03 0.028</pos>
+			<size>0.5 0.058</size>
+			<metadata>systemFullname</metadata>
+			<fontPath>${fontRobotoRegular}</fontPath>
+			<fontSize>0.032</fontSize>
+			<horizontalAlignment>left</horizontalAlignment>
+			<verticalAlignment>center</verticalAlignment>
+			<systemNameSuffix>true</systemNameSuffix>
+			<color>FFFFFFFF</color>
+			<opacity>1</opacity>
+			<zIndex>2000</zIndex>
+		</text>
+
+		<!-- Video background -->
+		<video name="game-video">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<imageType>fanart</imageType>
+			<delay>3</delay>
+			<zIndex>16</zIndex>
+		</video>
+
+		<!-- Game Background Default -->
+		<image name="game-background-default">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./resources/_parts/default.jpg</path>
+			<zIndex>1</zIndex>
+		</image>
+
+		<!-- Game Fanart background -->
+		<image name="game-fanart">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<imageType>fanart</imageType>
+			<zIndex>14</zIndex>
+		</image>
+
+		<!-- Game Fanart Collection background -->
+		<image name="game-fanart-collection" if="${system.collection}">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./resources/arts/collections/{game:name}.jpg</path>
+			<zIndex>15</zIndex>
+		</image>
+
+		<!-- Game Cover -->
+		<image name="game-cover">
+			<origin>0 0.5</origin>
+			<pos>0.06 0.48</pos>
+			<maxSize>0.3 0.55</maxSize>
+			<imageType>cover</imageType>
+			<rotation>-4</rotation>
+			<zIndex>18</zIndex>
+
+			<interpolation>linear</interpolation>
+			<scrollFadeIn>true</scrollFadeIn>
+		</image>
+
+		<!-- Game Name -->
+		<text name="game-name">
+			<origin>0 0</origin>
+			<pos>0.03 0.77</pos>
+			<size>0.5 0.10</size>
+			<metadata>name</metadata>
+			<fontPath>${fontRobotoCondensedBold}</fontPath>
+			<fontSize>0.044</fontSize>
+			<color>FFFFFFFF</color>
+			<horizontalAlignment>left</horizontalAlignment>
+			<zIndex>99</zIndex>
+		</text>
+
+		<!-- Game releasedate & publisher -->
+		<datetime name="game-releasedate">
+			<origin>0 0</origin>
+			<pos>0.035 0.86</pos>
+			<size>0.1 0.016</size>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<color>FFFFFFFF</color>
+			<metadata>releasedate</metadata>
+			<defaultValue>:space:</defaultValue>
+			<format>%Y,</format>
+		</datetime>
+
+		<text name="game-information">
+			<origin>0 0</origin>
+			<pos>0.08 0.86</pos>
+			<size>0.5 0.016</size>
+			<metadata>publisher</metadata>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.030</fontSize>
+			<color>FFFFFFFF</color>
+			<horizontalAlignment>left</horizontalAlignment>
+			<zIndex>99</zIndex>
+		</text>
+
+		<!-- DEV platform name -->
+		<text name="game-systemName">
+			<origin>0 0</origin>
+			<pos>0.015 0.950</pos>
+			<size>0.5 0.03</size>
+			<metadata>systemName</metadata>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.020</fontSize>
+			<color>FFFFFF90</color>
+			<zIndex>99</zIndex>
+		</text>
+	</view>
+
+	<!-- Aspect Ratios -->
+	<aspectRatio name="16:9">
+		<include>./aspect-ratio-16-9.xml</include>
+	</aspectRatio>
+	<aspectRatio name="4:3">
+		<include>./aspect-ratio-4-3.xml</include>
+	</aspectRatio>
+	<aspectRatio name="16:10">
+		<include>./aspect-ratio-16-10.xml</include>
+	</aspectRatio>
+	<aspectRatio name="19.5:9">
+		<include>./aspect-ratio-19_5-9.xml</include>
+	</aspectRatio>
+	<aspectRatio name="1:1">
+		<include>./aspect-ratio-1-1.xml</include>
+	</aspectRatio>
+
+	<!-- Sounds -->
+	<view name="all">
+		<sound name="systembrowse">
+			<path>./resources/sounds/systembrowse.wav</path>
+		</sound>
+		<sound name="quicksysselect">
+			<path>./resources/sounds/quicksysselect.wav</path>
+		</sound>
+		<sound name="select">
+			<path>./resources/sounds/select.wav</path>
+		</sound>
+		<sound name="back">
+			<path>./resources/sounds/back.wav</path>
+		</sound>
+		<sound name="scroll">
+			<path>./resources/sounds/scroll.wav</path>
+		</sound>
+		<sound name="favorite">
+			<path>./resources/sounds/favorite.wav</path>
+		</sound>
+		<sound name="launch">
+			<path>./resources/sounds/launch.wav</path>
+		</sound>
+	</view>
+
+</theme>

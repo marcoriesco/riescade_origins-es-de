@@ -1,0 +1,150 @@
+<theme>
+
+	<variables>
+		<fontRobotoLight>./../resources/fonts/Roboto-Light.ttf</fontRobotoLight>
+		<fontRobotoRegular>./../resources/fonts/Roboto-Regular.ttf</fontRobotoRegular>
+		<fontRobotoBold>./../resources/fonts/Roboto-SemiBold.ttf</fontRobotoBold>
+		<fontRobotoCondensedLight>./../resources/fonts/RobotoCondensed-Light.ttf</fontRobotoCondensedLight>
+		<fontRobotoCondensedRegular>./../resources/fonts/RobotoCondensed-Regular.ttf</fontRobotoCondensedRegular>
+		<fontRobotoCondensedBold>./../resources/fonts/RobotoCondensed-SemiBold.ttf</fontRobotoCondensedBold>
+
+		<backgroundArtPath>./../resources/arts/${system.theme}.jpg</backgroundArtPath>
+		<backgroundDefaultArtPath>./../resources/arts/_default.jpg</backgroundDefaultArtPath>
+
+		<logoArtPath>./../resources/logos/${system.theme}.png</logoArtPath>
+		<logoDefaultArtPath>./../resources/logos/_default.png</logoDefaultArtPath>
+	</variables>
+
+    <view name="system,gamelist">
+		<image name="platforms_avatar">
+			<origin>1 0</origin>
+			<pos>0.835 0.026</pos>
+			<size>0.035 </size>
+			<path>./../resources/_parts/riescade.png</path>
+			<zIndex>2000</zIndex>
+		</image>
+
+		<image name="platforms_config">
+			<origin>1 0</origin>
+			<pos>0.77 0.0434</pos>
+			<size>0.02 </size>
+			<path>./../resources/icons/config.png</path>
+			<color>FFFFFF</color>
+			<zIndex>2000</zIndex>
+		</image>
+
+		<image name="platforms_filter">
+			<origin>1 0</origin>
+			<pos>0.726 0.0432</pos>
+			<size>0.02 </size>
+			<path>./../resources/icons/filter.png</path>
+			<color>FFFFFF</color>
+			<zIndex>2000</zIndex>
+		</image>
+
+		<!-- Clock -->
+		<clock name="clock">
+			<origin>1 0</origin>
+			<pos>0.96 0.028</pos>
+			<size>0.135 0.058</size>
+			<fontPath>${fontRobotoLight}</fontPath>
+			<fontSize>0.035</fontSize>
+			<!-- <backgroundColor>ffffff50</backgroundColor> -->
+			<color>FFFFFFFF</color>
+			<horizontalAlignment>right</horizontalAlignment>
+			<verticalAlignment>center</verticalAlignment>
+			<format>%H:%M PM</format>
+			<scope>view</scope>
+			<opacity>1</opacity>
+		</clock>
+
+		<helpsystem name="help">
+			<origin>0.5 1</origin>
+			<pos>0.5 0.99</pos>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.020</fontSize>
+			<fontSizeDimmed>0.026</fontSizeDimmed>
+			<letterCase>capitalize</letterCase>
+			<iconColor>ffffff50</iconColor>
+			<textColor>ffffff80</textColor>
+			<originDimmed>0.5 0</originDimmed>
+			<posDimmed>0.5 0.94</posDimmed>
+			<textColorDimmed>cccccc</textColorDimmed>
+			<iconColorDimmed>cccccc</iconColorDimmed>
+			<opacityDimmed>1.0</opacityDimmed>
+			<scope>view</scope>
+		</helpsystem>
+
+		<systemstatus name="system-status">
+			<origin>1 0</origin>
+			<pos>0.985 0.950</pos>
+			<fontPath>${fontRobotoRegular}</fontPath>
+			<color>ffffff50</color>
+			<height>0.03</height>
+			<opacity>1</opacity>
+			<scope>view</scope>
+		</systemstatus>
+
+		<text name="system-name">
+			<origin>0 0</origin>
+			<pos>0.03 0.028</pos>
+			<size>0.5 0.058</size>
+			<text>Emuladores</text>
+			<fontPath>${fontRobotoRegular}</fontPath>
+			<fontSize>0.032</fontSize>
+			<horizontalAlignment>left</horizontalAlignment>
+			<verticalAlignment>center</verticalAlignment>
+			<!-- <backgroundColor>ffffff50</backgroundColor> -->
+			<color>FFFFFFFF</color>
+			<opacity>1</opacity>
+			<zIndex>2000</zIndex>
+		</text>
+
+        <!-- Background Default -->
+        <image name="background_default">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./../resources/_parts/default.png</path>
+            <zIndex>1</zIndex>
+        </image>
+
+        <!-- Overlay background -->
+        <image name="overlay">
+            <origin>0 0</origin>
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>./../resources/_parts/overlay.png</path>
+            <zIndex>2</zIndex>
+        </image>
+
+        <grid name="gamegrid">
+            <pos>0.025 0.16</pos>
+            <size>0.950 0.84</size>
+            <itemSize>0.3 0.16</itemSize>
+            <itemSpacing>0.01 0.01</itemSpacing>
+            <imageType>marquee</imageType>
+            <backgroundColor>141416</backgroundColor>
+            <backgroundCornerRadius>0.02</backgroundCornerRadius>
+            <selectorColor>350d7c30</selectorColor>
+            <selectorCornerRadius>0.02</selectorCornerRadius>
+            <unfocusedItemOpacity>1</unfocusedItemOpacity>
+            <textColor>ffffff70</textColor>
+            <textSelectedColor>ffffff</textSelectedColor>
+            <zIndex>50</zIndex>
+        </grid>
+
+        <!-- DEV platform name -->
+		<text name="systemName">
+			<origin>0 0</origin>
+			<pos>0.015 0.950</pos>
+			<size>0.5 0.03</size>
+			<metadata>name</metadata>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.020</fontSize>
+			<color>FFFFFF90</color>
+			<zIndex>99</zIndex>
+		</text>
+    </view>
+
+</theme>

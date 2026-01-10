@@ -1,11 +1,11 @@
 <theme>
 
 	<variables>
-        <themeRoot>./../</themeRoot>
-    </variables>
-    
+		<themeRoot>./../</themeRoot>
+	</variables>
+
 	<include>./../variables.xml</include>
-    
+
 	<view name="system,gamelist">
 		<image name="platforms_avatar">
 			<origin>1 0</origin>
@@ -91,41 +91,56 @@
 			<zIndex>2000</zIndex>
 		</text>
 
-        <!-- Background Default -->
-        <image name="background_default">
-            <origin>0 0</origin>
-            <pos>0 0</pos>
-            <size>1 1</size>
-            <path>./../resources/_parts/default.png</path>
-            <zIndex>1</zIndex>
-        </image>
+		<!-- DEV platform name -->
+		<text name="systemName">
+			<origin>0 0</origin>
+			<pos>0.015 0.950</pos>
+			<size>0.5 0.03</size>
+			<systemdata>name</systemdata>
+			<systemNameSuffix>true</systemNameSuffix>
+			<fontPath>${fontRobotoCondensedRegular}</fontPath>
+			<fontSize>0.020</fontSize>
+			<color>FFFFFF90</color>
+			<zIndex>99</zIndex>
+		</text>
+	</view>
 
-        <!-- Overlay background -->
-        <image name="overlay">
-            <origin>0 0</origin>
-            <pos>0 0</pos>
-            <size>1 1</size>
-            <path>./../resources/_parts/overlay.png</path>
-            <zIndex>2</zIndex>
-        </image>
+	<view name="gamelist">
+		<!-- Background Default -->
+		<image name="background_default">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./../resources/_parts/default.jpg</path>
+			<zIndex>1</zIndex>
+		</image>
 
-        <grid name="gamegrid">
-            <pos>0.025 0.16</pos>
-            <size>0.950 0.84</size>
-            <itemSize>0.3 0.16</itemSize>
-            <itemSpacing>0.01 0.01</itemSpacing>
-            <imageType>marquee</imageType>
-            <backgroundColor>141416</backgroundColor>
-            <backgroundCornerRadius>0.02</backgroundCornerRadius>
-            <selectorColor>350d7c30</selectorColor>
-            <selectorCornerRadius>0.02</selectorCornerRadius>
-            <unfocusedItemOpacity>1</unfocusedItemOpacity>
-            <textColor>ffffff70</textColor>
-            <textSelectedColor>ffffff</textSelectedColor>
-            <zIndex>50</zIndex>
-        </grid>
+		<!-- Overlay background -->
+		<image name="overlay">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./../resources/_parts/overlay.png</path>
+			<zIndex>2</zIndex>
+		</image>
 
-        <!-- DEV platform name -->
+		<grid name="gamegrid">
+			<pos>0.025 0.16</pos>
+			<size>0.950 0.84</size>
+			<itemSize>0.3 0.16</itemSize>
+			<itemSpacing>0.01 0.01</itemSpacing>
+			<imageType>marquee</imageType>
+			<backgroundColor>141416</backgroundColor>
+			<backgroundCornerRadius>0.02</backgroundCornerRadius>
+			<selectorColor>350d7c30</selectorColor>
+			<selectorCornerRadius>0.02</selectorCornerRadius>
+			<unfocusedItemOpacity>1</unfocusedItemOpacity>
+			<textColor>ffffff70</textColor>
+			<textSelectedColor>ffffff</textSelectedColor>
+			<zIndex>50</zIndex>
+		</grid>
+
+		<!-- DEV platform name -->
 		<text name="systemName">
 			<origin>0 0</origin>
 			<pos>0.015 0.950</pos>
@@ -136,6 +151,6 @@
 			<color>FFFFFF90</color>
 			<zIndex>99</zIndex>
 		</text>
-    </view>
+	</view>
 
 </theme>

@@ -7,9 +7,9 @@ license:       creative commons CC-BY-NC-SA
 <theme>
 
 	<variables>
-        <themeRoot>./</themeRoot>
-    </variables>
-    
+		<themeRoot>./</themeRoot>
+	</variables>
+
 	<include>./variables.xml</include>
 
 	<!-- All Views -->
@@ -151,14 +151,14 @@ license:       creative commons CC-BY-NC-SA
 		</image>
 
 		<!-- System Fanart video Animate -->
-		<video name="system-background-animate">
+		<!-- <video name="system-background-animate">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<delay>1.5</delay>
 			<path>./resources/arts/animate/${system.name}.mp4</path>
 			<zIndex>11</zIndex>
-		</video>
+		</video> -->
 
 		<image name="overlay, overlayLeft, overlayRight">
 			<origin>0 0</origin>
@@ -278,13 +278,13 @@ license:       creative commons CC-BY-NC-SA
 		</image>
 
 		<!-- Game Fanart Collection background -->
-		<image name="game-fanart-collection" if="${system.collection}">
+		<!-- <image name="game-fanart-collection" if="${system.collection}">
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
 			<path>./resources/arts/collections/{game:name}.jpg</path>
 			<zIndex>15</zIndex>
-		</image>
+		</image> -->
 
 		<!-- Game Cover -->
 		<image name="game-cover">
